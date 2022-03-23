@@ -1,0 +1,536 @@
+.clearfix::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+body{
+    margin: 0;
+}
+
+.inner{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.acara .inner{
+    position: relative;
+    z-index: 9;
+}
+
+.makanan-kate .inner{
+    position: relative;
+    z-index:9999;
+}
+.awal{
+    height: 100vh;
+    background-image:url("img/satu.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.swiper-awal img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-awal {
+    height: 100%;
+    width: 100%;
+}
+
+.kresek-hitam{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    color:darkred;
+    z-index: 99;
+}
+
+.kresek-hitam h1{
+    font-size: 72px;
+    text-shadow: 2px 2px 2px #fb6e14;
+}
+
+.kresek-hitam h2{
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #fb6e14;
+}
+
+.navigasi{
+    background:white;
+    text-align: center;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    margin:3px 0 3px 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+.navigasi a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 15px 18px 15px;
+    text-shadow:2px 2px 2px brown;
+    font-weight: bold;
+}
+
+.navigasi a:hover{
+    color:darkorange;
+}
+
+.navigasi .logo{
+    position: relative;
+    top:15px;
+    
+}
+
+.navigasi .logo img{
+    object-fit: cover;
+    height: 70px;
+    width: 100%;
+}
+
+.tentang{
+    display: flex;
+}
+
+.tentang-kiri,
+.tentang-kanan{
+    flex: 1;
+    width: 50%;
+    background-image: url('img/two.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.tentang-kanan{
+    background-image: url('img/dua.png');
+}
+
+.tentang-isi{
+    padding:10% 18% 10% 18%;
+    color: brown;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.tentang-isi h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+.tentang-isi .cuma-garis{
+    height: 4px;
+    width: 80px;
+    background-color: darkorange;
+    margin: -20px auto 0;
+    box-shadow: 2px 2px 2px#00000050;
+}
+
+.tentang-isi .depanan{
+    font-size:500%;
+    float: left;
+    color:darkgray;
+}
+
+.testimoni{
+    padding: 100px 0;
+}
+
+.testimoni .swiper-slide{
+    background: #fff;
+    padding-bottom: 50px;
+}
+
+.swiper-testimoni-pagination{
+    text-align: center;
+}
+
+.testimoni h2{
+    font-size: 42px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px darkblue;
+}
+
+.testimoni h3{
+    font-size: 28px;
+}
+
+.rekomendasi{
+    background-image:url('img/tga.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.rekomendasi img{
+    width: 200;
+    height:200px;
+}
+
+.rekomendasi .toter{
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 2px darkslategray;
+    font-size: 40px;
+}
+
+.rekomendasi .toter1{
+    font-weight: bold;
+    color:black;
+    text-shadow: 2px 2px 2px darkslategray;
+    font-size: 20px;
+}
+
+.rekomendasi h2{
+    color:white;
+    font-weight: bold;
+    text-shadow:2px 2px 2px darkblue;
+}
+
+.rekomendasi h3{
+    color:gold;
+    text-shadow: 2px 2px 2px black;
+}
+
+.baris-menu-r,
+.kolom-menu-tipe-1,
+.kmt2 {
+    display: flex;
+    border: 1px solid rgb(23, 117, 11);
+}
+
+.kolom-menu-tipe-1,
+.kolom-menu-tipe-2,
+.kmr-gambar,
+.kmr-data {
+    flex: 1;
+}
+
+.kmr-gambar {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kolom-menu-tipe-1 .kmr-data {
+    background:darkorange;
+    min-height: 500px;
+}
+
+.kolom-menu-tipe-2 .kmr-data {
+    background: black;
+    min-height: 250px;
+}
+
+.kmr-data p{
+    color:darkblue;
+}
+
+.makanan-kate{
+    width: 50px 0;
+    background-image: url('img/gren.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.makanan-kate .inner{
+    display: flex;
+     
+}
+
+.km-item1{
+    flex: 1;
+    color:white;
+    text-align: center;
+    padding: 69px;
+}
+
+.km-item1 img{
+    width: 70px;
+    height: 70px;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 999px;
+    object-fit: cover;
+    object-position: center center;
+}
+ 
+.menu-makanan .b-menu{
+    color: blue;
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+}
+
+.menu-makanan .t-menu{
+    text-align: center;
+    font-size: 16px;
+}
+
+.baris-intro {
+    text-align: center;
+    padding: 70px;
+}
+
+.kolom-mmk {
+    float: left;
+    width: 50%;
+    margin-bottom: 60px;
+}
+
+.kolom-mmk-upper img{
+       float: left;
+       height: 40px;
+       width: 40px;
+       object-fit: contain;
+       margin-right: 15px;
+}
+
+.kolom-mmk-upper h2{
+    line-height: 40px;
+    margin: 0;
+    text-shadow: 2px 2px 2px darkblue;
+    font-style: italic;
+}
+
+.kml-img {
+    float: left;
+    width: 15%;
+    height: 90px;
+}
+
+.kml-desc {
+    float: left;
+    width: 60%;
+}
+
+.kml-price {
+    float: left;
+    width: 25%;
+    font-size: 30px;
+    color: #fb6e14; 
+}
+
+.kolom-mmk:nth-child(odd) {
+    clear: both;
+}
+
+.acara{
+    padding: 50px 0;
+    background-image: url('img/slide_2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    text-align: center;
+    color:white
+}
+
+.acara h2{
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px darkgoldenrod;
+    font-size: 30px;
+}
+
+.acara .jdl-acara{
+    font-size: 18px;
+    color: black;
+    text-shadow: 2px 2px 2px darkgoldenrod;
+}
+
+.acara-list{
+    display: flex;
+}
+
+.acara-item{
+    flex:1;
+    background: white;
+    color: #d56623;
+    padding: 40px 20px;
+    margin: 20px;
+    border: 2px solid #ddd;
+}
+
+.acara-list h3{
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.acara-list h4{
+    font-size: 20px;
+}
+
+.acara-list p{
+    color: rgb(150, 150, 150);
+}
+
+.kontak{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.kontak-list{
+    display: flex;
+    font-size: 18px;
+}
+
+.kontak-list > div {
+    flex: 1;
+    text-align: left;
+}
+
+.no-li-sym{
+    list-style: none;
+    padding-left: 2;
+}
+
+.kontak-info li{
+     margin-bottom: 15px;
+     position: relative;
+     line-height: 200%;
+}
+
+.kontak-info li i{
+      position: absolute;
+      left: -40px;
+      top:10px;
+}
+
+.daform input,
+.daform select,
+.daform textarea,
+.daform button {
+    display: block;
+    width: 90%;
+    padding: 8px 12px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.daform textarea {
+    resize: vertical;
+    min-height: 50px;
+}
+
+.daform button{
+    width: 100px;
+    border: 2px solid #f60;
+    background: #fff;
+    color: #f60;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.kaki {
+    background:black;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 150%;
+    
+}
+
+.kaki a {
+    color: rgb(134, 164, 204);
+    text-decoration: none;
+    transition: color 200ms ease-in-out;
+}
+
+.kaki a:hover {
+    color: #fa9958;
+}
+
+.kaki .social-links {
+    font-size: 36px;
+}
+
+/* untuk layar <720px */
+ @media screen and (max-width: 720px ) {
+     
+    .baris-menu-r {
+        flex-wrap:wrap;
+    }
+    .baris-menu-r > div {
+        flex: 0 0 100%;
+    }
+    
+    .makanan-kate .inner{
+        flex-wrap: wrap;
+    }
+    .km-item1 {
+        flex: 0 0 50%;
+        box-sizing: border-box;
+    }
+
+    .navigasi a{
+        display:none;
+    }
+    
+    .navigasi .logo{
+        display: inline-block;
+    }
+    .acara-list{
+        flex-wrap: wrap;
+    }
+
+    .acara-item{
+        flex: 0 0 100%;
+        margin: 0 0 50px 0;
+        box-sizing: border-box;
+    }
+
+    .kontak-list{
+      flex-wrap:wrap ;
+    }
+    .kontak-list > div {
+        flex:0 0 100%;
+        margin:30px;
+    }
+ }
+        
+ @media screen and (max-width: 480px ) {
+     
+    .tentang-kiri{
+         flex-wrap: wrap;
+     }
+     
+     .tentang-kanan{
+         flex: 0 0 80%;
+     }
+
+     .makanan-kate .inner{
+        flex-wrap: wrap;
+    }
+    .km-item1 {
+        flex: 0 0 25%;
+        box-sizing: border-box;padding: 40px;
+    }
+ }
+
+  
